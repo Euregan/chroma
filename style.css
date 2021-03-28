@@ -1,19 +1,38 @@
-.board {
-  /* resetting ul style */
+html {
+  font-family: sans-serif;
+}
+
+
+/* resetting default styles */
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
 
+.board {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .quote {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  gap: 0.5rem;
 
   cursor: pointer;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details ul {
+  margin-top: 0.25rem;
+  font-size: 0.9em;
 }
 
 audio {

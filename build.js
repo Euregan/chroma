@@ -8,10 +8,16 @@ const tail = `</ul></body></html>`
 
 const body = data.map(quote =>
   [
-    '<li class="quote">',
-    `<audio onclick="event.target.play()" src="/${quote.series.toLowerCase()}/${quote.episode}/${quote.start}.mp3"></audio>`,
-    `<span onclick="event.target.previousSibling.play()" class="sentence">${quote.sentence}</span>`,
-    '</li>'
+    '<li class="quote" onclick="this.children[0].play()">',
+    `<audio src="/${quote.series.toLowerCase()}/${quote.episode}/${quote.start}.mp3"></audio>`,
+    '<div class="details">',
+    `<span class="sentence">${quote.sentence}</span>`,
+    '<ul>',
+    `<li><a href="${quote.url}" target="_blank">${quote.series} - ${quote.episode} - ${quote.title}</a></li>`,
+    `<li>${quote.speaker} - ${quote.character}</li>`,
+    '</ul>',
+    '</div>',
+    '</li>',
   ].join('')
 ).join('')
 
