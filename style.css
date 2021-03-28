@@ -1,0 +1,26 @@
+.board {
+  /* resetting ul style */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+audio {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+
+  background: url('/play.svg');
+  background-size: contain;
+}
