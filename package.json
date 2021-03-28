@@ -5,13 +5,13 @@
   "main": "build.js",
   "scripts": {
     "build": "node build.js",
-    "dev": "concurrently \"nodemon --ext js,json,css,svg build.js\" \"http-server\""
+    "dev": "concurrently \"nodemon --ext js,json,css,svg build.js\" \"live-server public\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^6.0.0",
-    "http-server": "^0.12.3",
+    "live-server": "^1.2.1",
     "nodemon": "^2.0.7"
   }
 }
