@@ -30,7 +30,7 @@ const body = [
       `<span class="sentence">${quote.sentence}</span>`,
       '<ul>',
       `<li><a href="${quote.url}" target="_blank">${quote.series} - ${quote.episode} - ${quote.title}</a></li>`,
-      `<li>${quote.speaker} - ${quote.character}</li>`,
+      `<li>${quote.speaker}${quote.character !== quote.speaker ? ` - ${quote.character}` : ''}</li>`,
       '</ul>',
       '</div>',
       '</li>',
