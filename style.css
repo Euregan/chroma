@@ -10,6 +10,10 @@ ul {
   list-style: none;
 }
 
+[type=search] {
+  width: 100%;
+}
+
 .board {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
