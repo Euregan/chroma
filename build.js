@@ -16,14 +16,14 @@ const tail = `</ul></body></html>`
 const quoteToId = quote => `${quote.series.toLowerCase()}-${quote.episode}-${quote.start}`
 
 const body = [
-    '<div>',
+    '<div class="title box">',
     '<h1>Crossed/Chroma Soundboard</h1>',
     '<input oninput="filterQuotes(event.target.value)" type="search" placeholder="Recherche"/>',
     '</div>'
   ].join('') +
   data.map(quote =>
     [
-      `<li class="quote" onclick="this.children[0].play()" id="${quoteToId(quote)}">`,
+      `<li class="quote box" onclick="this.children[0].play()" id="${quoteToId(quote)}">`,
       `<audio src="/${quote.series.toLowerCase()}/${quote.episode}/${quote.start}.mp3"></audio>`,
       '<div class="details">',
       `<span class="sentence">${quote.sentence}</span>`,

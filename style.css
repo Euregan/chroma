@@ -1,5 +1,23 @@
+@font-face {
+  font-family:"acumin-pro";
+  src:url("/acumin-pro-regular.woff2") format("woff2"),url("/acumin-pro-regular.woff") format("woff"),url("/acumin-pro-regular.otf") format("opentype");
+  font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+  font-family:"acumin-pro";
+  src:url("/acumin-pro-bold.woff2") format("woff2"),url("/acumin-pro-bold.woff") format("woff"),url("/acumin-pro-bold.otf") format("opentype");
+  font-display:auto;font-style:normal;font-weight:700;
+}
+
 html {
-  font-family: sans-serif;
+  font-family: acumin-pro, sans-serif;
+  background: #F3F3F1;
+  color: #030002;
+}
+
+body {
+  margin: 5rem 10rem;
 }
 
 
@@ -10,14 +28,37 @@ ul {
   list-style: none;
 }
 
+.box {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+
+  box-shadow: 0 1rem 1.75rem rgba(0, 0, 0, 0.06);
+}
+
+.title {
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+}
+
 [type=search] {
   width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
 }
 
 .board {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .quote {
