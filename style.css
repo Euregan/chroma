@@ -90,13 +90,9 @@ a {
   color: #7A7A7A;
 }
 
-audio {
-  display: block;
+.quote img {
   width: 3rem;
   height: 3rem;
-
-  background: url('/play.svg');
-  background-size: contain;
 
   cursor: pointer;
 }

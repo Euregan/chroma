@@ -24,7 +24,8 @@ const body = [
   data.map(quote =>
     [
       `<li class="quote box" id="${quoteToId(quote)}">`,
-      `<audio onclick="this.play()" src="/${quote.series.toLowerCase()}/${quote.episode}/${quote.start}.mp3"></audio>`,
+      `<audio src="/${quote.series.toLowerCase()}/${quote.episode}/${quote.start}.mp3"></audio>`,
+      '<img onclick="this.previousSibling.play()" src="/play.svg" />',
       '<div class="details">',
       `<span class="sentence">${quote.sentence}</span>`,
       '<ul>',
