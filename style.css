@@ -13,7 +13,7 @@
 html {
   font-family: acumin-pro, sans-serif;
   background: #F3F3F1;
-  color: #030002;
+  color: #3F3F3F;
 }
 
 body {
@@ -66,8 +66,10 @@ h1 {
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
+}
 
-  cursor: pointer;
+.sentence {
+  font-size: 1.1em;
 }
 
 .details {
@@ -78,6 +80,14 @@ h1 {
 .details ul {
   margin-top: 0.25rem;
   font-size: 0.9em;
+
+  color: #7A7A7A;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #7A7A7A;
 }
 
 audio {
@@ -87,4 +97,6 @@ audio {
 
   background: url('/play.svg');
   background-size: contain;
+
+  cursor: pointer;
 }

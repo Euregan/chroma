@@ -2,7 +2,7 @@
   <style>
     path {
       fill: none;
-      stroke: black;
+      stroke: #3F3F3F;
       stroke-width: 5;
       stroke-linejoin: round;
     }
