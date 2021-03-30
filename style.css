@@ -96,3 +96,21 @@ a {
 
   cursor: pointer;
 }
+
+@media screen and (max-width: 1920px) {
+  .board {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .board {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .board {
+    grid-template-columns: 1fr;
+  }
+}
